@@ -4,6 +4,12 @@ pipeline{
             label 'ROBOSHOP'
         }
     }
+    environment{
+        COURSE ="Jenkins"
+    }
+    options{
+        disableConcurrentBuilds()
+    }
     stages{
         stage('build') {
             steps{
