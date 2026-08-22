@@ -34,6 +34,11 @@ pipeline{
                 script{
                     sh """
                         echo "Testing"
+                        echo "Hello ${params.PERSON}"
+                        echo "Biography: ${params.BIOGRAPHY}"
+                        echo "Toggle: ${params.TOGGLE}"
+                        echo "Choice: ${params.DEPLOY}" 
+                        echo "Password: ${params.PASSWORD}"
                     """
                 }
             }
